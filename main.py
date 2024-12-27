@@ -6,7 +6,7 @@ from machine_learning.llm.graphs.compiled_graph import compiled_graph
 load_dotenv()
 
 prompt_input: str = f"""
-    Me mostre na tela os leucócitos classificados como verificar e suas detecções.
+    Mostre na minha tela todos os linfócitos
     
     """
 
