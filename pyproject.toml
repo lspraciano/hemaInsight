@@ -6,8 +6,21 @@ authors = ["Lucas Praciano <luskcct@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
-
+python = "^3.12"
+greenlet = "^3.1.1"
+langchain = "^0.3.0"
+langchain-community = "^0.3.0"
+langchain-openai = "^0.2.0"
+python-dotenv = "^1.0.1"
+torch = "^2.4.1"
+torchvision = "^0.19.1"
+torchaudio = "^2.4.1"
+ultralytics = "^8.2.102"
+pillow = "^10.4.0"
+pydantic = "^2.9.2"
+langgraph = "^0.2.60"
+pymongo = "4.9.0"
+langgraph-checkpoint-sqlite = "^2.0.1"
 
 [build-system]
 requires = ["poetry-core"]
