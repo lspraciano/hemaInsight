@@ -3,7 +3,7 @@ import os
 from PIL import Image
 from langchain_core.tools import tool
 
-from machine_learning.cnn.schemas import YoloResultSchema
+from machine_learning.cnn.schemas import YoloResultSchema, ImagePredictedSchema
 from machine_learning.cnn.yolo_handler import yolo_predict
 
 
@@ -14,14 +14,17 @@ def leucocytes_detect(
     """
     Detects leukocytes in images by their path.
     """
-    result_image: Image
+    image_predicted: ImagePredictedSchema
     result_schema: YoloResultSchema
 
     image_full_path: str = image_path
     image_name: str = os.path.basename(image_full_path)
     image: Image = Image.open(image_path)
-    result_image, result_schema = yolo_predict(image)
-    output_text: str = f"Image Name: {image_name}\n"
+    image_predicted, result_schema = yolo_predict(image)
+    output_text: str = f"""
+    Image Name: {image_name}\n
+    Image Predicted Output Path: {image_predicted["image_path"]}\n
+    """
 
     for index, class_id in enumerate(result_schema.detect_class_id_list):
         output_text += f"""

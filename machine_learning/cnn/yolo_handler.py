@@ -5,7 +5,7 @@ from numpy import ndarray
 from ultralytics import YOLO
 from ultralytics.engine.results import Results, Boxes
 
-from machine_learning.cnn.schemas import YoloResultSchema
+from machine_learning.cnn.schemas import YoloResultSchema, ImagePredictedSchema
 
 
 def load_yolo_model() -> YOLO | None:
@@ -44,7 +44,7 @@ def get_plotted_image_from_result(
 
 def yolo_predict(
         image: Image,
-) -> tuple[Image, YoloResultSchema] | None:
+) -> tuple[ImagePredictedSchema, YoloResultSchema] | None:
     yolo_model: YOLO = load_yolo_model()
     image_from_array: Image
     class_name_dict: dict = {
@@ -74,6 +74,11 @@ def yolo_predict(
 
     image_full_path: str = image.filename
     image_name: str = os.path.basename(p=image_full_path)
-    image_from_array.save(f"./images/detections/pred_{image_name}")
+    image_path_prediction: str = f"./images/detections/pred_{image_name}"
+    image_from_array.save(image_path_prediction)
+    image_predicted: ImagePredictedSchema = ImagePredictedSchema(
+        image=image_from_array,
+        image_path=image_path_prediction,
+    )
 
-    return image_from_array, result_schema
+    return image_predicted, result_schema
