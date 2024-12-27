@@ -1,6 +1,5 @@
 from langgraph.prebuilt import ToolNode
 
-from machine_learning.llm.tools.leucocytes_tool import leucocytes_detect
+from machine_learning.llm.tools.tools_handler import tools
 
-tools: list = [leucocytes_detect]
 tool_node: ToolNode = ToolNode(tools)
