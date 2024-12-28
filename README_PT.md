@@ -32,7 +32,9 @@ uma interação fluida entre o usuário e o agente de IA.
 - [🔧 Configurando](#-configurando)
     - [Criando ".env"](#criando-env)
 - [🚀 Executando Aplicação](#-executando-aplicação)
-- [🔭 Exemplo de Uso](#-exemplo-de-uso)
+- [🔭 Exemplo de Uso](#-exemplo-de-uso) 
+    - [Vídeo Demonstrativo](#vídeo-demonstrativo)
+    - [Texto Demonstrativo](#texto-demonstrativo)
 - [⚠️ Notas](#-notas)
 
 ## ☑️ Status do Projeto
@@ -143,7 +145,13 @@ Para executar a aplicação podemos usar o comando abaixo
 python main.py
 ```
 
-### 🔭 Exemplo de Uso
+## 🔭 Exemplo de Uso
+
+### Vídeo Demonstrativo
+
+[![Leukocyte Detection Video](https://img.youtube.com/vi/e1nAZXptTnI/0.jpg)](https://youtu.be/e1nAZXptTnI)
+
+### Texto Demonstrativo
 
 ```
 - User: Olá

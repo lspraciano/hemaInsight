@@ -8,10 +8,10 @@ three tools: one for detections using a YOLOv10 model trained to detect
 leukocytes, another to list images in a specific folder, and the last
 one to display images on the screen for the user.
 
-This project leverages the powerful YOLO models provided by the 
-[Ultralitycs](https://docs.ultralytics.com/pt/models/yolov10/)library 
-for object detection and combines it with advanced natural language 
-processing using [LangChain](https://www.langchain.com/) and 
+This project leverages the powerful YOLO models provided by the
+[Ultralitycs](https://docs.ultralytics.com/pt/models/yolov10/)library
+for object detection and combines it with advanced natural language
+processing using [LangChain](https://www.langchain.com/) and
 [LangGraph](https://www.langchain.com/langgraph) to enable seamless interaction
 between the user and the AI agent.
 
@@ -32,6 +32,8 @@ between the user and the AI agent.
     - [Creating ".env"](#creating-env)
 - [🚀 Running the Application](#-running-the-application)
 - [🔭 Usage Example](#-usage-example)
+    - [Vídeo Exemple](#vídeo-exemple)
+    - [Text Exemple](#text-exemple)
 - [⚠️ Notes](#-notes)
 
 ## ☑️ Project Status
@@ -139,7 +141,13 @@ To run the application, use the following command:
 python main.py
 ```
 
-### 🔭 Usage Example
+## 🔭 Usage Example
+
+### Vídeo Exemple
+
+[![Leukocyte Detection Video](https://img.youtube.com/vi/0D92Rvi_4JA/0.jpg)](https://youtu.be/0D92Rvi_4JA)
+
+### Text Exemple
 
 ```
 - User: Hello
