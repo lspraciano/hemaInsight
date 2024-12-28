@@ -8,6 +8,13 @@ three tools: one for detections using a YOLOv10 model trained to detect
 leukocytes, another to list images in a specific folder, and the last
 one to display images on the screen for the user.
 
+This project leverages the powerful YOLO models provided by the 
+[Ultralitycs](https://docs.ultralytics.com/pt/models/yolov10/)library 
+for object detection and combines it with advanced natural language 
+processing using [LangChain](https://www.langchain.com/) and 
+[LangGraph](https://www.langchain.com/langgraph) to enable seamless interaction
+between the user and the AI agent.
+
 ![compiled_graph.png](compiled_graph.png)
 
 ## 🗂️ Table of Contents

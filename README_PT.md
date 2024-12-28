@@ -9,6 +9,13 @@ modelo YOLOv10 treinado para detectar leucócitos, outra para listar as imagens
 em uma determinada pasta, e a última que permite exibir imagens na tela para
 usuário.
 
+Este projeto utiliza os poderosos modelos YOLO
+fornecidos pela biblioteca [Ultralytics](https://docs.ultralytics.com/pt/models/yolov10/) para detecção
+de objetos e os combina com processamento avançado de
+linguagem natural usando [LangChain](https://www.langchain.com/) e
+[LangGraph](https://www.langchain.com/langgraph), permitindo
+uma interação fluida entre o usuário e o agente de IA.
+
 ![compiled_graph.png](compiled_graph.png)
 
 ## 🗂️ Índice
